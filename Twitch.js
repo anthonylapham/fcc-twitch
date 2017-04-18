@@ -19,9 +19,9 @@ $(document).ready(function() {
      success: function(data) {
        console.log(data);
        if (!data.stream) {
-         $('#display').append('<li>User is offline</li>');
+         $('#display').append('<li><a href = '+data._links.channel+'User is offline</a></li>');
        } else {
-         $('#display').append('<li>' + data.stream.game + '</li>');
+         $('#display').append('<li>' + data.stream.channel.display_name+ ' is playing '+ data.stream.game + '</li>');
        }
      }
     })
