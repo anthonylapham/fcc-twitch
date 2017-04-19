@@ -12,16 +12,16 @@ $(document).ready(function() {
   function getUserStream(user) {
     $.ajax({
      type: 'GET',
-     url: 'https://api.twitch.tv/kraken/streams/' + user,
+     url: 'https://api.twitch.tv/kraken/channels/' + user,
      headers: {
        'Client-ID': '11dithbd4in0tzxu0d91v5phrdj9mm'
      },
      success: function(data) {
        console.log(data);
-       if (!data.stream) {
-         $('#display').append('<li><a href = '+data._links.channel+'User is offline</a></li>');
+       if (!data.game) {
+         $('#display').append('<li><a href = '+data.url+'>' +data.display_name+ ' is offline</a></li>');
        } else {
-         $('#display').append('<li>' + data.stream.channel.display_name+ ' is playing '+ data.stream.game + '</li>');
+         $('#display').append('<li><a href=' +data.url+ '>' + data.display_name+ ' is playing '+ data.game + '</li>');
        }
      }
     })
