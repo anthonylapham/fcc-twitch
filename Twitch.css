@@ -1,8 +1,16 @@
 body{
-background-color: green;
+background:linear-gradient(to right, #f7971e, #ffd200);
 color: black;
+}
+h1{
+  font-size: 40px;
+  font-family: fantasy;
+  position: relative;
+  text-align: center;
 }
 ul{
 font-size: 20px;
 font-family: fantasy;
+text-align: center;
+list-style: none;
 }

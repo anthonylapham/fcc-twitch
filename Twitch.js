@@ -19,9 +19,9 @@ $(document).ready(function() {
      success: function(data) {
        console.log(data);
        if (!data.game) {
-         $('#display').append('<li><a href = '+data.url+'>' +data.display_name+ ' is offline</a></li>');
+         $('#display').append('<li><a href = '+data.url+'><img src=' +data.logo+ '>' +data.display_name+ ' is offline</a></li>');
        } else {
-         $('#display').append('<li><a href=' +data.url+ '>' + data.display_name+ ' is playing '+ data.game + '</li>');
+         $('#display').append('<li><a href=' +data.url+ '><img src=' +data.logo+ '>' + data.display_name+ ' is playing '+ data.game + '</li>');
        }
      }
     })
