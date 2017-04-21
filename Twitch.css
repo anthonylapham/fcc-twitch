@@ -11,6 +11,7 @@ h1{
 ul{
 font-size: 20px;
 font-family: fantasy;
-text-align: center;
+text-align: left;
+position: absolute;
 list-style: none;
 }
