@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
+  var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "habathcx", "RobotCaleb", "noobs2ninjas"];
 
    /*for (var i = 0; i < users.length; i++) {
     getUserStream(users[i]);
@@ -19,9 +19,9 @@ $(document).ready(function() {
      success: function(data) {
        console.log(data);
        if (!data.game) {
-         $('#display').append('<li><a href = '+data.url+'><img src=' +data.logo+ '>' +data.display_name+ ' is offline</a></li>');
+         $('#display').append('<li><a href = '+data.url+'><img src=' +data.logo+ '>' +data.display_name+ ' is offline</a></li>'); //for users that aren't streaming
        } else {
-         $('#display').append('<li><a href=' +data.url+ '><img src=' +data.logo+ '>' + data.display_name+ ' is playing '+ data.game + '</li>');
+         $('#display').append('<li><a href=' +data.url+ '><img src=' +data.logo+ '>' + data.display_name+ ' is playing '+ data.game + '</li>'); //for users that are streaming
        }
      }
     })
