@@ -4,18 +4,20 @@ color: black;
 }
 
 h1{
-  font-size: 40px;
+  font-size: 90px;
   font-family: fantasy;
   position: relative;
   text-align: center;
+  color: #a60d0d;
 }
 
 ul{
-font-size: 20px;
+font-size: 35px;
 font-family: fantasy;
 text-align: left;
 position: absolute;
 list-style: none;
+color: #a60d0d;
 }
 
 div{
