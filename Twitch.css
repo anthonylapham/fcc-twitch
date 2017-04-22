@@ -1,13 +1,15 @@
 body{
-background:linear-gradient(to right, #f7971e, #ffd200);
+background: linear-gradient(to right, #ffb347, #ffcc33); //gradient is from -->/*https://uigradients.com/#PastelOrangeattheSun*/
 color: black;
 }
+
 h1{
   font-size: 40px;
   font-family: fantasy;
   position: relative;
   text-align: center;
 }
+
 ul{
 font-size: 20px;
 font-family: fantasy;
@@ -15,7 +17,12 @@ text-align: left;
 position: absolute;
 list-style: none;
 }
+
 div{
 border: solid;
-border-bottom: solid;
+}
+
+img{
+height: 100px;
+width: 100px;
 }
