@@ -15,3 +15,7 @@ text-align: left;
 position: absolute;
 list-style: none;
 }
+div{
+border: solid;
+border-bottom: solid;
+}
