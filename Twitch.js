@@ -18,13 +18,13 @@ $(document).ready(function() {
      },
      success: function(data) {
        $("#display").on("click", function(){
-         window.open(data.url, "_blank");
+          window.open(data.url, "_blank");
        })
        console.log(data);
        if (!data.game) {
-         $('#display').append('<li><a href =' +data.url+'><img src=' +data.logo+ '>' +data.display_name+ ' is offline</a></li>'); //for users that aren't streaming
+         $('#display').append('<li><img src=' +data.logo+ '>' +data.display_name+ ' is offline</li>'); //for users that aren't streaming
        } else {
-         $('#display').append('<li><a href=' +data.url+ '><img src=' +data.logo+ '>' + data.display_name+ ' is playing '+ data.game + '</li>'); //for users that are streaming
+         $('#display').append('<li><img src=' +data.logo+ '>' + data.display_name+ ' is playing '+ data.game + '</li>'); //for users that are streaming
        }
      }
     })
