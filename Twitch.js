@@ -17,6 +17,9 @@ $(document).ready(function() {
        'Client-ID': '11dithbd4in0tzxu0d91v5phrdj9mm'
      },
      success: function(data) {
+       $("#display").on("click", function(){
+         window.open(data.url, "_blank");
+       })
        console.log(data);
        if (!data.game) {
          $('#display').append('<li><a href =' +data.url+'><img src=' +data.logo+ '>' +data.display_name+ ' is offline</a></li>'); //for users that aren't streaming
